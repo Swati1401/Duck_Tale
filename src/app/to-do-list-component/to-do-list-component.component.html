@@ -1,0 +1,49 @@
+
+  <p class="h1">To-Do-List-Details</p>
+ 
+  <div class="row">
+    <div class="col-12 col-xl-12">
+        <div class="card p-2">
+            <table  class="table table-striped" >
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <td>{{childMessage.taskname}}</td> 
+                      
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" (change)="changeSelection($event)" >
+                            <label class="form-check-label" for="flexCheckChecked1" >
+                          
+                            </label>
+                     
+                    </tr>
+                    <tr>
+                        <th>Task Description</th>
+                        <td>{{childMessage.taskDes}}</td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" (change)="changeSelection1($event)">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                          
+                            </label>
+                          </div>
+                    </tr>
+                    <tr>
+                        <th>Repeating Task</th>
+                        <td>{{childMessage.repeatingTask}}</td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" (change)="changeSelection2($event)">
+                            <label class="form-check-label" for="flexCheckDefault3">
+                      
+                            </label>
+                          </div>
+                    </tr>
+                </thead>
+              
+                
+              
+            </table>
+        </div>
+    </div>
+</div>
+<p  *ngIf="Taskstatus==true &&Taskstatus1==true &&Taskstatus2==true  " class="h4">To-Do-List-Details are Submitted SuccessFully</p>
+
+ 

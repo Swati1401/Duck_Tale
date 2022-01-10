@@ -1,0 +1,10 @@
+.ng-invalid{
+    border: left 5px red;
+
+}.ng-valid{
+    border: left 5px green;
+    
+}
+.error{
+   color: red; 
+}
